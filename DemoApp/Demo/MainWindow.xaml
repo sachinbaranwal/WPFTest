@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -14,7 +14,7 @@
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <ListBox Grid.Row="0" Grid.Column="0">
+        <ListBox Grid.Row="0" Grid.Column="0" Width="350" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0">
             <ListBoxItem>Add TextBox</ListBoxItem>
             <ListBoxItem>Add Label</ListBoxItem>
             <ListBoxItem>Add CheckBox</ListBoxItem>
@@ -26,63 +26,36 @@
                 <RowDefinition Height="90*"></RowDefinition>
                 <RowDefinition Height="10*"></RowDefinition>
             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
             <ScrollViewer Grid.Row="1" Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                <Grid x:Name="controlContainer" Grid.Row="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="90*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <TextBox Height="20" Grid.Row="0" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="1" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="2" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="3" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="4" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="5" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="6" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="7" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="8" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="9" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="10" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="11" Grid.Column="0"></TextBox>
-
-                    <TextBox Height="20" Grid.Row="12" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="13" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="14" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="15" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="16" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="17" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="18" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="19" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="20" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="21" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="22" Grid.Column="0"></TextBox>
-                    <TextBox Height="20" Grid.Row="23" Grid.Column="0"></TextBox>
-                </Grid>
+                <StackPanel x:Name="controlContainer" Grid.Row="1">
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin1"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin2"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin3"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin4"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin5"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin6"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin7"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin8"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin9"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin10"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin11"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin12"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin13"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin14"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin15"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin16"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin17"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin18"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin19"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin20"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin21"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin22"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin23"></TextBox>
+                    <TextBox Height="20" Margin="0,0,0,10" Text="Sachin24"></TextBox>
+                </StackPanel>
             </ScrollViewer>
         </Grid>
     </Grid>
